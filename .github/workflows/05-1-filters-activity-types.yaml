@@ -1,0 +1,14 @@
+name: 05 - 1 - Event Filters and Activities Types
+
+on:
+    pull_request:
+        types: [ opened, synchronize]
+        branches: 
+            - main
+
+jobs:
+    echo:
+        runs-on: ubuntu_latest
+        steps:
+            - run: echo "Running whenever a OR is opened or synchronize AND nase branch is main."
+
